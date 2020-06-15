@@ -1,6 +1,5 @@
 from os import path
 from nltk import corpus, download
-from progress.bar import Bar
 
 download("cmudict", quiet=True)
 arpabet = corpus.cmudict.dict()
@@ -26,7 +25,6 @@ def create_new_words(word):
 def get_word_phones(word):
     word_phones_set = set()
     pronunciations = arpabet.get(word, [[]])
-
     for phones in pronunciations:
         for phone in phones:
             word_phones_set.add(phone)
@@ -43,37 +41,24 @@ def get_words(rel_file_path):
 
 
 def run():
-    results = []
-
     words_set = get_words("./words_alpha.txt")
-    with Bar("Processing", max=len(words_set)) as bar:
-        for word in words_set:
-            bar.next()
+    for word in words_set:
+        matches = []
+        phonemes_set = set()
 
-            matches = []
-            phonemes_set = set()
+        for i, new_word in enumerate(create_new_words(word)):
+            word_phones_set = get_word_phones(new_word)
 
-            new_words = create_new_words(word)
+            if new_word not in words_set or is_invalid_word(
+                phonemes_set, word_phones_set
+            ):
+                break
 
-            for i in range(len(new_words)):
-                new_word = new_words[i]
-                word_phones_set = get_word_phones(new_word)
+            phonemes_set.update(word_phones_set)
+            matches.append(new_word)
 
-                if (
-                    new_word not in words_set
-                    or len(word_phones_set) == 0
-                    or len(phonemes_set.intersection(word_phones_set)) > 0
-                ):
-                    break
-
-                phonemes_set.update(word_phones_set)
-                matches.append(new_word)
-
-                if i == 2:
-                    results.append(matches)
-
-    for matches in results:
-        print(f"{matches[0]}, {matches[1]}, {matches[2]}")
+            if i == 2:
+                print(f"{matches[0]}, {matches[1]}, {matches[2]}")
 
 
 if __name__ == "__main__":
