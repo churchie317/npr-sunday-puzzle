@@ -7,5 +7,5 @@ This project uses Pipenv. To install the tool, follow the directions [here](http
 To run the solver program, execute the following command:
 
 ```bash
-python main <puzzle_week>
+python main.py <puzzle_week>
 ```
