@@ -11,18 +11,12 @@ def is_invalid_word(phonemes_set, word_phones_set):
     )
 
 
-def create_new_words(word):
+def get_associated_words(word):
     return [f"{chr(ord(word[0]) + j)}{word[1:]}" for j in range(3)]
 
 
 def get_word_phones(word):
-    word_phones_set = set()
-    pronunciations = arpabet.get(word, [[]])
-    for phones in pronunciations:
-        for phone in phones:
-            word_phones_set.add(phone)
-
-    return word_phones_set
+    return {phone for phones in arpabet.get(word, [[]]) for phone in phones}
 
 
 def get_words(rel_file_path):
@@ -39,7 +33,7 @@ def run():
         matches = []
         phonemes_set = set()
 
-        for i, new_word in enumerate(create_new_words(word)):
+        for i, new_word in enumerate(get_associated_words(word)):
             word_phones_set = get_word_phones(new_word)
 
             if new_word not in words_set or is_invalid_word(
@@ -51,7 +45,7 @@ def run():
             matches.append(new_word)
 
             if i == 2:
-                print(f"{matches[0]}, {matches[1]}, {matches[2]}")
+                print(f"{matches[0]},{matches[1]},{matches[2]}")
                 return
 
 
