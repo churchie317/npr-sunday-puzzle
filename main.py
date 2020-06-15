@@ -10,6 +10,8 @@ if __name__ == "__main__":
         module = importlib.import_module(module_name)
         module.run()
 
+        exit()
+
     except Exception as ex:
         tb = exc_info()[2]
         print_tb(tb)

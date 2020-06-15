@@ -12,14 +12,7 @@ def is_invalid_word(phonemes_set, word_phones_set):
 
 
 def create_new_words(word):
-    words = []
-    for j in range(3):
-        first_char = chr(ord(word[0]) + j)
-        base_word = word[1:]
-        new_word = f"{first_char}{base_word}"
-        words.append(new_word)
-
-    return words
+    return [f"{chr(ord(word[0]) + j)}{word[1:]}" for j in range(3)]
 
 
 def get_word_phones(word):
@@ -59,6 +52,7 @@ def run():
 
             if i == 2:
                 print(f"{matches[0]}, {matches[1]}, {matches[2]}")
+                return
 
 
 if __name__ == "__main__":
