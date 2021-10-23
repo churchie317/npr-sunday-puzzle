@@ -7,7 +7,7 @@ verify_ssl = true
 
 [packages]
 pronouncing = "*"
-nltk = "*"
+nltk = ">=3.6.4"
 progress = "*"
 black = "*"
 english-words = "*"
