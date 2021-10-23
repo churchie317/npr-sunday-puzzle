@@ -1,0 +1,1 @@
+This week's challenge comes from listener Robert Flood of Allen, Texas. Think of a seven-letter hyphenated word for a kind of cooking. Change the middle letter to get a new word describing a kind of music. What words are these?

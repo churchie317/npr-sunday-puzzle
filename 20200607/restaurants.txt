@@ -1,0 +1,100 @@
+KFC
+IHOP
+Subway
+Arby’s
+Wendy’s
+Dunkin’
+Denny’s
+Zaxby’s
+Hooters
+Domino’s
+Hardee’s
+Culver’s
+Wingstop
+Del Taco
+Starbucks
+Taco Bell
+Pizza Hut
+Bob Evans
+McDonald’s
+Applebee’s
+Carl’s Jr.
+Bojangles’
+Yard House
+Chick-fil-A
+Burger King
+Dairy Queen
+Papa John’s
+Whataburger
+Red Lobster
+TGI Fridays
+Tim Hortons
+Jamba Juice
+O’Charley’s
+Shake Shack
+First Watch
+Panera Bread
+Olive Garden
+Waffle House
+P.F. Chang’s
+Krispy Kreme
+Jason’s Deli
+Ruby Tuesday
+White Castle
+Panda Express
+Golden Corral
+El Pollo Loco
+Marco’s Pizza
+Auntie Anne’s
+Boston Market
+Noodles & Co.
+Smoothie King
+Sonic Drive-In
+Little Caesars
+Cracker Barrel
+Steak ‘n Shake
+Firehouse Subs
+Baskin-Robbins
+Bonefish Grill
+Jack in the Box
+Texas Roadhouse
+In-N-Out Burger
+Dave & Buster’s
+Mellow Mushroom
+Church’s Chicken
+McAlister’s Deli
+Logan’s Roadhouse
+Round Table Pizza
+Buffalo Wild Wings
+Outback Steakhouse
+Jersey Mike’s Subs
+Qdoba Mexican Eats
+Dutch Bros. Coffee
+The Capital Grille
+Long John Silver’s
+Miller’s Ale House
+Chili’s Grill & Bar
+LongHorn Steakhouse
+Papa Murphy’s Pizza
+Moe’s Southwest Grill
+Einstein Bros. Bagels
+Chipotle Mexican Grill
+The Cheesecake Factory
+Tropical Smoothie Cafe
+Potbelly Sandwich Shop
+The Habit Burger Grill
+Maggiano’s Little Italy
+Ruth’s Chris Steak House
+Carrabba’s Italian Grill
+California Pizza Kitchen
+Popeyes Louisiana Kitchen
+Cheddar’s Scratch Kitchen
+Five Guys Burgers and Fries
+BJ’s Restaurant & Brewhouse
+Perkins Restaurant & Bakery
+Captain D’s Seafood Kitchen
+Checkers Drive-In Restaurants
+Raising Cane’s Chicken Fingers
+Jimmy John’s Gourmet Sandwiches
+Red Robin Gourmet Burgers and Brews
+Freddy’s Frozen Custard & Steakburgers
